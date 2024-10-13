@@ -43,12 +43,6 @@
   
     <link rel="stylesheet" href="assets/mobirise/css/custom.css">
 
-
- <link rel="stylesheet" href="assets/jquery-google-reviews.css">
- <script async src="assets/jquery-google-reviews.js"></script>
-
-
-</head>
 <body>
 
 <!-- Analytics -->
@@ -725,7 +719,6 @@ document.addEventListener("DOMContentLoaded", function() {
         We really value your feedback to help improve our service and to assist others choose Wight Sweep for their Fireplace and chimney services. Thank you to all our customers,.</h3>
     <div class="col-md-10 testimonials-container"> 
       
-<div id="google-reviews"></div>
       
     <div class="testimonials-item">
         <div class="user row">
@@ -866,29 +859,6 @@ document.addEventListener("DOMContentLoaded", function() {
 <input name="cookieData" type="hidden" data-cookie-cookiesAlertType='false' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(234, 239, 241)' data-cookie-opacityOverlay='undefined' data-cookie-bgOpacity='undefined' data-cookie-textButton='Agree' data-cookie-rejectText='REJECT' data-cookie-colorButton='' data-cookie-rejectColor='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
-  <script>
-jQuery(document).ready(function($) {
-  if ($("#google-reviews").length == 0) {
-    return
-  }
-  // Find a placeID via https://developers.google.com/places/place-id
-  $("#google-reviews").googlePlaces({
-    placeId: 'ChIJbUF-yNlidEgRmLyX5Li6oGk',
-    // the following params are optional (default values)
-    header: "<h3>Google Reviews</h3>", // html/text over Reviews
-    footer: '', // html/text under Reviews block
-    maxRows: 5, // max 5 rows of reviews to be displayed
-    minRating: 4, // minimum rating of reviews to be displayed
-    months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
-    textBreakLength: "90", // length before a review box is set to max width
-    shortenNames: true, // example: "Max Mustermann" -> "Max M."",
-    moreReviewsButtonUrl: '', // url to Google Place reviews popup
-    moreReviewsButtonLabel: 'Show More Reviews',
-    writeReviewButtonUrl: '', // url to Google Place write review popup
-    writeReviewButtonLabel: 'Write New Review',
-    showProfilePicture: true
-  });
-});
-</script>
+ 
 </body>
 </html>
