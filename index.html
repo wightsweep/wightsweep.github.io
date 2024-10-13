@@ -44,6 +44,33 @@
     <link rel="stylesheet" href="assets/mobirise/css/custom.css">
 
 
+ <link rel="stylesheet" href="assets/jquery-google-reviews.css">
+ <script async src="assets/jquery-google-reviews.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+  if ($("#google-reviews").length == 0) {
+    return
+  }
+  // Find a placeID via https://developers.google.com/places/place-id
+  $("#google-reviews").googlePlaces({
+    placeId: 'ChIJbUF-yNlidEgRmLyX5Li6oGk',
+    // the following params are optional (default values)
+    header: "<h3>Google Reviews</h3>", // html/text over Reviews
+    footer: '', // html/text under Reviews block
+    maxRows: 5, // max 5 rows of reviews to be displayed
+    minRating: 4, // minimum rating of reviews to be displayed
+    months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+    textBreakLength: "90", // length before a review box is set to max width
+    shortenNames: true, // example: "Max Mustermann" -> "Max M."",
+    moreReviewsButtonUrl: '', // url to Google Place reviews popup
+    moreReviewsButtonLabel: 'Show More Reviews',
+    writeReviewButtonUrl: '', // url to Google Place write review popup
+    writeReviewButtonLabel: 'Write New Review',
+    showProfilePicture: true
+  });
+});
+</script>
 </head>
 <body>
 
@@ -709,6 +736,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(35, 35, 35);">
   </div>
   <div class="container">
+
+
+
+
+
     <h2 class="pb-3 mbr-fonts-style mbr-white align-center display-2">
         WHAT OUR CUSTOMERS SAY
     </h2>
@@ -716,7 +748,7 @@ document.addEventListener("DOMContentLoaded", function() {
         We really value your feedback to help improve our service and to assist others choose Wight Sweep for their Fireplace and chimney services. Thank you to all our customers,.</h3>
     <div class="col-md-10 testimonials-container"> 
       
-
+<div id="google-reviews"></div>
       
     <div class="testimonials-item">
         <div class="user row">
