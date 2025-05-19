@@ -39,7 +39,11 @@
   
     <link rel="preload" as="style" href="assets/mobirise/css/carousel-model.css"><link rel="stylesheet" href="assets/mobirise/css/carousel-model.css" type="text/css">
  <link rel="stylesheet" href="assets/mobirise/css/custom.css">
-
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
+</script>
 </head>
 <body>
 
@@ -370,7 +374,7 @@
             <div class="media-container-row mbr-white">
                 <div class="col-sm-6 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2025 Wight Sweep - All Rights Reserved
+                        © Copyright <span id="year"></span> Wight Sweep - All Rights Reserved
                     </p>
                 </div>
                 <div class="col-md-6">
