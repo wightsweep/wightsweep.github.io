@@ -40,9 +40,11 @@
     <link rel="preload" as="style" href="assets/mobirise/css/carousel-model.css"><link rel="stylesheet" href="assets/mobirise/css/carousel-model.css" type="text/css">
  <link rel="stylesheet" href="assets/mobirise/css/custom.css">
 <script>
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById("year").innerHTML = year;
+window.onload = function() {
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("year").innerHTML = year;
+}
 </script>
 </head>
 <body>
